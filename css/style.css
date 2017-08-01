@@ -1,0 +1,73 @@
+/* Base css */
+body{
+    background-color: 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+margin: 0 0 15px;
+font-weight: 700;
+}
+body{
+	font-family: 'open Sans', sans-serif;
+}
+a:hover{text-decoration: none;}
+.section-padding{
+	padding: 88px 0;
+}
+.absulate_bg_1:after {
+    background-image: url(../img/1.jpg);
+}
+.absulate_bg_2:after {
+   background-image: url(../img/2.jpg);
+}
+.section-padding {
+    position: relative;
+    z-index: 1;
+}
+
+.section-padding.absulate_bg_1:after, .section-padding.absulate_bg_2:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+
+.section-padding.absulate_bg_2:after {
+    right: auto;
+    left: 0;
+}
+.boxed_content {
+    box-shadow: 0 0 4px #ccc;
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+a.boxed_btn {
+    background: #ffce43;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.section-padding.absulate_bg_1,.section-padding.absulate_bg_1 {
+    margin: 43px 0;
+}
